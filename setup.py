@@ -11,4 +11,7 @@ setup(
         [console_scripts]
         scrape_nowcast=nowcast.scraper:main
     ''',
+    install_requires=[
+        'click', 'pandas', 'pynio', 'tqdm', 'xarray'
+    ],
 )

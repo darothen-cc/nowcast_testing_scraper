@@ -5,11 +5,10 @@ testing the in-development Nowcast 0.5 and 1.0 algorithms.
 
 ## Installation
 
-Install via `pip`/`setuptools` directly from git:
+Install via `pip`/`setuptools` directly via git:
 
-``` shell
-$ pip install git+git://github.com/darothen-cc/nowcast_testing_scraper.git
-```
+    $ pip install git+git://github.com/darothen-cc/nowcast_testing_scraper.git
+
 
 ## Dependencies
 
@@ -24,6 +23,21 @@ necessary dependencies, and they are also enumerated for `setuptools` to deal
 - pynio (for reading GRBI2)
 - tqdm (for console output)
 - xarray (for reading and processing GRIB2)
+
+You can install these packages in the typical way if you'd like.
+
+### Management with Conda
+
+To install a stand-alone conda environment for this scraper, first clone
+the repository from GitHub and then execute
+
+    $ conda env create -f environment.yml
+
+Then, enable the environment by executing
+
+    $ source activate nowcast_testing_scraper_env
+    
+### Python 3
 
 This scraper will also work in Python>=3.3, but it will require bleeding 
 edge/dev versions of *xarray* and *pynio*, which can be obtained from GitHub:
