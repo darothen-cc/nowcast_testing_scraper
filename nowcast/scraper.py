@@ -177,10 +177,11 @@ def main(year, month, day, hour, bounds=None, output_dir="test_case",
     to retrieve, broken down by its YEAR, MONTH, DAY, and HOUR. E.g. to grab
     the forecast from 22Z on August 23, 2017, you would execute
 
-    $ scrape_nowcast 2017 8 23 22
+    $ scrape_nowcast 2017 8 23 22 ./
 
     You must also indicate a directory to save the data. This can be the full
-    path to the directory, or relative to the current directory.
+    path to the directory, or relative to the current directory. In the example
+   above, it would download and process the data in the local directory.
 
     Optionally, you can request a certain number of forecast hours or a
     subset of the latitudes and longitudes to download using the `bounds`

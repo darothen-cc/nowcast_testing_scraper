@@ -3,8 +3,9 @@ channels:
   - conda-forge
   - ncar
 dependencies:
-  - python=3.5
+  - python=2.7
+  - click
   - pandas
-  - pynio=dev
+  - pynio
   - tqdm
   - xarray

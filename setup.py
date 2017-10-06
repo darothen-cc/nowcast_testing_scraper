@@ -2,7 +2,11 @@ from setuptools import setup
 
 setup(
     name="nowcast_testing_scraper",
-    py_modules=['nowcast/scraper', ],
+    description="Quick scraping utility for grabbing archival HRRR data",
+    url="https://github.com/darothen-cc/nowcast_testing_scraper",
+    author="Daniel Rothenberg",
+    author_email="daniel@climacell.co",
+    packages=['nowcast', ],
     entry_points='''
         [console_scripts]
         scrape_nowcast=nowcast.scraper:main
